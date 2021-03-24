@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block head %}
+    {{ super() }}
+    <title>Subir la evidencia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+{% endblock %}
+{% block content %}
+    <div style="display: flex; justify-content: center; height: 100vh; align-items: center;  flex-direction: column">
+        <div class="jumbotron" style="width: 50%; padding: 20px; border-radius: 5px;">
+            <h2 align="center">Datos de entrada</h2>
+            <form method=post enctype=multipart/form-data>
+                <div class="form-group">
+                    <label>Sucursal</label>
+                    <input class="form-control" type="text" name="sucursal">
+                </div>
+                <div class="form-group">
+                        <label>Nombre del promotor</label>
+                        <input class="form-control" type="text" name="promotor">
+                </div>
+                <div class="form-group">
+                    <label>Imagen promocional</label>
+                    <input type=file name=file>
+                </div>
+                <input class="btn btn-success"type=submit value="Generar PDF">
+            </form>
+        </div>
+        <p style="font-size: 12px">Esto es solo una desmotración, para verificar como el servidor está generando el pdf correctamente.</p>
+    </div>
+    
+{% endblock %}

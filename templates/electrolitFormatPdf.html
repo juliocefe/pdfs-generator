@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size:100px;
+        }
+        .electrolit {
+            position: absolute;
+            top:2px;
+            left:2px;
+            height: 100px;
+            width: 170px;
+        }
+        .img {
+            position: absolute;
+            top:0;
+            right:0;
+            height: 300px;
+            width: 500px;
+        }
+        .purple {
+            color: purple;
+        }
+        .fotoContenedor{
+            display: relative;
+            padding-top: 80px;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .sucursal {
+            color: blue;
+            font-size: 20px;
+        }
+        .logo-sucursal {
+            position: absolute;
+            top:300px;
+            left:36px;
+            height: 140px;
+            width: 200px;
+        }
+        .promotor {
+            color: blue;
+            
+        }
+        .foto{
+            height: 550px;
+            width: 450px;
+            border-radius: 10px;
+        }
+        .suero {
+            position: fixed;
+            right:0px;
+            bottom:0px;
+            height: 200px;
+            width: 150px;
+        }
+        body{
+            font-family: sans-serif;
+            height: 600px;
+            margin:0;
+            position:relative;
+        }
+        @page { size: letter landscape; 
+            margin: 0; /* Set margin on each page */ 
+            border: #dddddd  2px solid;
+        } 
+    </style>
+</head>
+<body>
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+    <div class="fotoContenedor">
+        <img class="logo-sucursal" src="{{ url_for('static', filename='images/logo-ley.png') }}">
+        <img class="electrolit" src="{{ url_for('static', filename='images/electrolit-logo3.jpg') }}"/>
+        <h1 class="sucursal">{{ sucursal }}</h1>
+        <img class="foto" src="{{ url_for('static', filename='uploads/evidencia.jpg') }}">
+        <p class="promotor">NOMBRE DEL PROMOTOR(A): {{ promotor }}</p>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/image.png') }}"/>
+    <img class="suero" src="{{ url_for('static', filename='images/electrolit-manzana.jpg') }}">
+</body>
+</html>
